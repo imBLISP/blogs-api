@@ -1,0 +1,38 @@
+[
+    {
+        "_index": "blogs",
+        "_id": 1,
+        "_source": {
+            "blog_title": "Novel Architecture Makes Neural Networks More Understandable",
+            "blog_text": "Neural networks are currently the most powerful tools in artificial intelligence,” said Sebastian Wetzel(opens a new tab), a researcher at the Perimeter Institute for Theoretical Physics. “When we scale them up to larger data sets, nothing can compete.”And yet, all this time, neural networks have had a disadvantage. The basic building block of many of today’s successful networks is known as a multilayer perceptron, or MLP. But despite a string of successes, humans just can’t understand how networks built on these MLPs arrive at their conclusions, or whether there may be some underlying principle that explains those results. The amazing feats that neural networks perform, like those of a magician, are kept secret, hidden behind wha’s commonly called a black box.",
+            "user_id": "Steve"
+        }
+    },
+    {
+        "_index": "blogs",
+        "_id": 2,
+        "_source": {
+            "blog_title": "Why Haskell?",
+            "blog_text": "I love writing in Haskell, and there are many reasons beyond this apologia why that is the case, but I also think it is an excellent choice for general purpose programming for anyone who wants to write robust software confidently and efficiently, and, of course, enjoyably. I think what makes Haskell unique is the combination of its type system and functional purity – it’s not enough just to have functional programming, much as I love LISPs, nor is it enough just to have the type system, much as Rust seems like a great language. Many languages have bits of these features, but only a few have all of them, and, of those languages (others include Idris, Agda, and Lean), Haskell is the most mature, and therefore has the largest ecosystem. While other languages are certainly adding features which I have mentioned above, this combination of a strong and expressive type system and pure functional programming is fundamental to the language: other languages without these axiomatic characteristics simply will not be able to implement them (and attempts to build some of these things into non-functional languages with weaker type systems is often extremely awkward and not very useful). Not everyone has the luxury of choosing their tools in a professional context, whether because there is history in their team or the decisions are made by others. Even in this case, if you never end up using Haskell professionally, it will change how you think about programming, and to invert Alan Perlis’ quotation from the start of this essay: any language which changes how you think about programming is worth learning.",
+            "user_id": "Colophon"
+        }
+    },
+    {
+        "_index": "blogs",
+        "_id": 3,
+        "_source": {
+            "blog_title": "Lab-grown diamonds",
+            "blog_text": "Scientists first manufactured diamonds in laboratories in the 1950s, imitating the conditions under which diamonds were produced in nature. The diamonds produced were initially small and impure and so useful only in low-tech industrial products such as abrasives and lubricants. Since then, diamond manufacturing technology has progressed: the generation process has become more controlled, new methods have been invented, and better catalysts have been discovered. Diamonds grown in the lab are now cheaper than mined diamonds and have superior physical, optical, chemical, and electrical properties. Consequently, they dominate the industrial market. In the past decade, diamond manufacturing technology progressed so much that it is now possible to mass-produce jewelry-quality diamonds in the lab. These lab diamonds are cheaper and more beautiful than mined diamonds. A perfectly cut, flawless lab diamond costs a fraction of the price of a mined diamond of lesser quality.",
+            "user_id": "Javid"
+        }
+    },
+    {
+        "_index": "blogs",
+        "_id": 4,
+        "_source": {
+            "blog_title": "Why GitHub Actually Won",
+            "blog_text": "I can boil it down to exactly two reasons that happened to resonate with each other at the perfect frequency. GitHub started at the right time, GitHub had good taste All four GitHub cofounders had flops both before and after GitHub. Chris and PJ couldn’t quite make FamSpam work before GitHub, Tom and I couldn’t quite make Chatterbug explode after GitHub. I think both of these ventures had good taste and great product, but it wasn’t the right place or time or market or whatever for them to become GitHub level. ",
+            "user_id": "Scott"
+        }
+    }
+]

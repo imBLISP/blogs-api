@@ -1,0 +1,31 @@
+services:
+  redis:
+    image: "redis:alpine"
+
+  elasticsearch:
+    image: "elasticsearch:8.15.1"
+    environment:
+      - ELASTIC_PASSWORD=elasticPassword
+      - discovery.type=single-node
+      - xpack.security.http.ssl.enabled=false
+      - xpack.license.self_generated.type=trial
+    healthcheck:
+      interval: 2s
+      retries: 80
+      test: curl --user elastic:elasticPassword 'localhost:9200/health'
+
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_BACKEND_URL=redis://redis:6379/0
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=elastic
+      - ELASTICSEARCH_PASSWORD=elasticPassword
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_started
